@@ -1,4 +1,4 @@
-package day1_Praktice;
+package praktice.day1;
 
 public class C04_JavaVariable {
     public static void main(String[] args) {
@@ -35,5 +35,12 @@ public class C04_JavaVariable {
         //Baska bir degiskeni initialize edin : y
         //x degiskenini initialize edin
         //y degiskenini yeni bir degerle guncelleyin
+
+        int x; // deklarasyon
+        int y =2000; //initialize  - asingment
+        x=30; // x'in intitialize
+        y=1; // guncelleme
+        System.out.println("x = " + x);
+        System.out.println("y = " + y);
     }
 }

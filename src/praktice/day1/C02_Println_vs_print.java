@@ -1,4 +1,4 @@
-package day1_Praktice;
+package praktice.day1;
 
 public class C02_Println_vs_print {
     public static void main(String[] args) {
