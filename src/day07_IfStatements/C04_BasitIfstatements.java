@@ -25,7 +25,8 @@ public class C04_BasitIfstatements {
         }
 
         if ( !(girilenGun.equals("pazartesi") || girilenGun.equals("sali") || girilenGun.equals("carsamba")
-                ||girilenGun.equals("persembe") || girilenGun.equals("cuma") ||girilenGun.equals("pazar") || girilenGun.equals("cumartesi"))){
+                ||girilenGun.equals("persembe") || girilenGun.equals("cuma")
+                ||girilenGun.equals("pazar") || girilenGun.equals("cumartesi"))){
             System.out.println("Lutfe gecerli bir gun ismi giriniz");
 
         }
