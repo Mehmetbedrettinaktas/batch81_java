@@ -1,6 +1,4 @@
-package praktice.day1;
-
-import java.util.Scanner;
+package prakticeElifHoca.day1;
 
 public class C13_Ternary {
     public static void main(String[] args) {

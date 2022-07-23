@@ -1,4 +1,4 @@
-package praktice.day3.recap1;
+package prakticeElifHoca.day3.recap1;
 
 public class C01_SwitchCase {
     public static void main(String[] args) {

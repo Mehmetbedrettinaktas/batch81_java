@@ -2,7 +2,7 @@ package day21_Arrays;
 
 import java.util.Arrays;
 
-public class C06_ArraeElemanEkleme {
+public class C06_ArrayeElemanEkleme {
     public static void main(String[] args) {
         // C05 deki method'u kullanarak array'e eleman ekleyelim
 
@@ -11,7 +11,7 @@ public class C06_ArraeElemanEkleme {
 
         takimListesi=C05_ArrayeElementEklame.elemanEkle(takimListesi,eklenecekIsim);
 
-        System.out.println(Arrays.toString(takimListesi));
+        System.out.println(Arrays.toString(takimListesi)); // [Suleyman, Osman, Talha]
 
 
     }

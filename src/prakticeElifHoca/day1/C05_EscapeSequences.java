@@ -1,4 +1,4 @@
-package praktice.day1;
+package prakticeElifHoca.day1;
 
 public class C05_EscapeSequences {
     public static void main(String[] args) {

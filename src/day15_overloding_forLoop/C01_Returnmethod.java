@@ -10,14 +10,14 @@ public class C01_Returnmethod {
         int sayi2 =5;
 
         int sonuc=carpGetir(sayi1,sayi2);
-                // method call  carpGetir methoduna git ve sayi1 ve sayi2 al gotur.
+                // method call  carpGetir methoduna git ve sayi1 ve sayi2 al getir.
 
         System.out.println("sonuc = " + sonuc);
     }
 
     public static int carpGetir(int sayi1, int sayi2) {
-        int sonuc=sayi1*sayi2;
-        return  sonuc;
+        System.out.println("illa'da sonu ");
+        return sayi1*sayi2;
 
     }
 }

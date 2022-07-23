@@ -1,4 +1,4 @@
-package praktice.day1;
+package prakticeElifHoca.day1;
 
 import java.util.Scanner;
 

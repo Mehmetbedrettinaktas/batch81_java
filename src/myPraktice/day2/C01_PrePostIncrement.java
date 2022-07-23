@@ -1,4 +1,4 @@
-package myPraktice_day03;
+package myPraktice.day2;
 
 public class C01_PrePostIncrement {
     public static void main(String[] args) {

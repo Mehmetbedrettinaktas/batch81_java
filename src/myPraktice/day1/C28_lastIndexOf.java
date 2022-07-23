@@ -1,4 +1,4 @@
-package myPraktice_day02;
+package myPraktice.day1;
 
 public class C28_lastIndexOf {
     public static void main(String[] args) {

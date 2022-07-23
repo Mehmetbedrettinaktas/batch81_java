@@ -1,4 +1,4 @@
-package day19_Scop;
+package day19_Scope;
 
 public class C01_InstanceVariables {
     /*
@@ -18,13 +18,18 @@ public class C01_InstanceVariables {
            dolayisiyla obje olusturursaniz instance variable'lari heryerden kullanabilirsiniz
          */
         C01_InstanceVariables obje1 = new C01_InstanceVariables();
+        // suanda bir objemiz var.
         System.out.println("obje1 degismeden once : "+obje1.instSayi); // 20
+
         obje1.instSayi=30;
         System.out.println("obje1 degistikten sonra : "+obje1.instSayi);  // 30
+
         C01_InstanceVariables obje2 = new C01_InstanceVariables();
         System.out.println("obje2 degismeden once : "+obje2.instSayi); // 20
+
         obje2.instSayi=25;
         System.out.println("obje2 degistikten sonra : "+obje2.instSayi); // 25
+
         C01_InstanceVariables obje3 = new C01_InstanceVariables();
         System.out.println("obje3 degismeden once : "+obje3.instSayi); // 20
         /*
@@ -49,6 +54,7 @@ public class C01_InstanceVariables {
     }
     public void staticOlmayanMethod(){
         System.out.println(instSayi);
+
         /*
          instance variable'lar class icerisindeki
          static olmayan method'lardan direk kullanilabilir

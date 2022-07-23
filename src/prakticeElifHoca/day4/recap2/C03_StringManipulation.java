@@ -1,4 +1,4 @@
-package praktice.day4.recap2;
+package prakticeElifHoca.day4.recap2;
 
 public class C03_StringManipulation {
     public static void main(String[] args) {

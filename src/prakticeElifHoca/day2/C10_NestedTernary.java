@@ -1,4 +1,4 @@
-package praktice.day2;
+package prakticeElifHoca.day2;
 
 public class C10_NestedTernary {
     public static void main(String[] args) {

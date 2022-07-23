@@ -8,8 +8,9 @@ public class C02_MethodCreation {
 
         // Verilen 3 basamakli bir sayinin
         // rakamlari toplamini yazdiran bir method olusturalim
+
         int input=521;
-        rakamlariTopla(input);
+        rakamlariTopla(input); // diger classlardan cagirdik
         C04_MethodCreation.topla(6,3);
 
     }

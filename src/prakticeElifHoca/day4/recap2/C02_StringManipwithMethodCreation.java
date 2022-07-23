@@ -1,4 +1,4 @@
-package praktice.day4.recap2;
+package prakticeElifHoca.day4.recap2;
 
 import java.util.Scanner;
 

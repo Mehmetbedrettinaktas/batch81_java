@@ -1,4 +1,4 @@
-package myPraktice_day02;
+package myPraktice.day1;
 
 import java.util.Locale;
 

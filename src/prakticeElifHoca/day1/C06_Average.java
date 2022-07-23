@@ -1,4 +1,4 @@
-package praktice.day1;
+package prakticeElifHoca.day1;
 
 public class C06_Average {
     public static void main(String[] args) {

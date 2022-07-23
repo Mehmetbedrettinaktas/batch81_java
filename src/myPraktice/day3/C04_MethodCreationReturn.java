@@ -1,6 +1,4 @@
-package myPraktice_day04;
-
-import static myPraktice_day04.C03_MethodCreation.ismiGizle1;
+package myPraktice.day3;
 
 public class C04_MethodCreationReturn {
     public static void main(String[] args) {

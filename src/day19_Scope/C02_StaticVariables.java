@@ -1,4 +1,4 @@
-package day19_Scop;
+package day19_Scope;
 
 public class C02_StaticVariables {
     static int staticSayi=10;
@@ -14,10 +14,11 @@ public class C02_StaticVariables {
        objeler icin degil class icin gecerlidir
         */
         System.out.println(staticSayi); // 10
-        staticMethod();
-        staticSayi=12;
+        staticMethod(); // staticmethod ' gidecek yani  -->  public static void staticMethod()
+
+        staticSayi=12; // deger degisiyor
         System.out.println(staticSayi); // 12
-        C02_StaticVariables obje1=new C02_StaticVariables();
+                C02_StaticVariables obje1=new C02_StaticVariables();
         obje1.staticOlmayanMethod();
         System.out.println(staticSayi); // 20
         /*

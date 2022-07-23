@@ -1,4 +1,4 @@
-package myPraktice.day_6For_While_DoWhileLoop;
+package myPraktice.day6_For_While_DoWhileLoop;
 
 public class C02_ForLoop {
     // 10 ile 30 arasindaki (10 ve 30 dahil)

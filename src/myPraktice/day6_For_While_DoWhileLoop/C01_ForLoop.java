@@ -1,4 +1,4 @@
-package myPraktice.day_6For_While_DoWhileLoop;
+package myPraktice.day6_For_While_DoWhileLoop;
 
 public class C01_ForLoop {
     public static void main(String[] args) {

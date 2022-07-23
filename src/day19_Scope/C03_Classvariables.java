@@ -1,4 +1,4 @@
-package day19_Scop;
+package day19_Scope;
 
 public class C03_Classvariables {
 

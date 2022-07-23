@@ -1,6 +1,6 @@
 package prakticeElifHoca.day6;
 
-public class C03_ForLoop {
+public class C03_ForLoopCarpimTablosu {
     public static void main(String[] args) {
         // 1 x 1 = 1
         // 1 x 2 = 2
@@ -19,9 +19,9 @@ public class C03_ForLoop {
 
                 System.out.println(i +" x "+j+ " = "+i*j);
 
-            }
+            }// inner sonu
             System.out.println(" ");
-        }
+        }// outer sonu
 
     }
 }

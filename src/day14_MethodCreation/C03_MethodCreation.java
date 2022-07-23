@@ -7,7 +7,7 @@ public class C03_MethodCreation {
         // I**** K***** seklinde yazdiran bir method olusturun
         String isim = "Enes";
         String soyisim = "Bozkurt";
-        ismiGizle(isim, soyisim);
+        ismiGizle(isim, soyisim); // parametreleri isim ve soyismi
         System.out.println(isim+ " " + soyisim);
 
     }

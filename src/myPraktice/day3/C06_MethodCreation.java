@@ -1,4 +1,4 @@
-package myPraktice_day04;
+package myPraktice.day3;
 
 public class C06_MethodCreation {
     public static void main(String[] args) {

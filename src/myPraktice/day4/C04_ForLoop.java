@@ -2,7 +2,7 @@ package myPraktice.day4;
 
 import java.util.Scanner;
 
-public class C05_ForLoop {
+public class C04_ForLoop {
     /*
     Soru 10 ) Kullanicidan iki sayi isteyin.
     Girilen sayilar ve aralarindaki tum tamsayilari

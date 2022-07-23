@@ -1,6 +1,6 @@
 package myPraktice.day5;
 
-public class C03_NestedForLoop {
+public class C03_NestedForLoopDikdortgen {
     public static void main(String[] args) {
           /*
         verilen  yukseklik ve boy degerlerine
