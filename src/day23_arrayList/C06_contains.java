@@ -12,7 +12,7 @@ public class C06_contains {
         urunler.add("Ikram");
         urunler.add("Cekirdek");
         urunler.add("Cay");
-
+    // contains () methodu yardimiyla aradigimiz urun veya elemani icerip icermedigini donduruyor
         System.out.println(urunler.contains("Nutella")); // true
         System.out.println(urunler.contains("Hobby")); // false
 

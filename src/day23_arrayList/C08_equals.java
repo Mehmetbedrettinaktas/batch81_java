@@ -24,8 +24,10 @@ public class C08_equals {
 
         System.out.println(urunler.equals(urunler2)); // false
 
-        Collections.sort(urunler);
+        Collections.sort(urunler); // Sitringi alfabetik siraya gore siraliyor
+        System.out.println("urunler = " + urunler); // urunler = [Cay, Cekirdek, Ikram, Nutella]
         Collections.sort(urunler2);
+        System.out.println("urunler2 = " + urunler2); // urunler2 = [Cay, Cekirdek, Ikram, Nutella]
 
         System.out.println(urunler.equals(urunler2)); //true
 

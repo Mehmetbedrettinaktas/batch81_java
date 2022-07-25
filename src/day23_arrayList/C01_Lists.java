@@ -20,6 +20,8 @@ public class C01_Lists {
         sayilar1.set(2,8);
         System.out.println(sayilar1); //[5, 3, 8, 2, 5, 3, 2, 2]
         System.out.println(sayilar1.set(0,12)); // 5 index o olan 5'i 12 ile degistiriyor. ve eskiyi bize donduruyor.
+        System.out.println("sayilar1 = " + sayilar1); // sayilar1 = [12, 3, 8, 2, 5, 3, 2, 2]
+
         /*
         set() methodu'u index'deki eski elementi silip,
         yerine verdigimiz yeni elementi set eder
@@ -29,7 +31,7 @@ public class C01_Lists {
 
         set() methodu sildigi eski elementi de bize dondurur.
          */
-        System.out.println("sayilar1 = " + sayilar1); // sayilar1 = [12, 3, 8, 2, 5, 3, 2, 2]
+
 
     }
 }
