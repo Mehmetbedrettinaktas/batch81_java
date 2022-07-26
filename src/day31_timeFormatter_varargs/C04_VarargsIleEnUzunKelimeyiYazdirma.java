@@ -7,7 +7,7 @@ public class C04_VarargsIleEnUzunKelimeyiYazdirma {
 
     }
 
-    public static void enUzunKelimeyiYazdir(String... kelime) { // String ... kelime   Vararags dir,
+    public static void enUzunKelimeyiYazdir(String... kelime) { // String ... kelime -->  Vararags dir,
 
         String enUzunKelime=kelime[0]; // ilk element en uzunmus gibi davranalim
 
@@ -18,7 +18,7 @@ public class C04_VarargsIleEnUzunKelimeyiYazdirma {
 
 
         }
-        System.out.println("girilen kelimelerden en uzunu : "+enUzunKelime); // Ismail
+        System.out.println("Girilen kelimelerden en uzunu : "+enUzunKelime); // Ismail
         // Babayigit ekledik ve son en uzn kelime o oldu
 
     }

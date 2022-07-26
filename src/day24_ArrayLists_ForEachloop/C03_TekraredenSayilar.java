@@ -12,12 +12,14 @@ public class C03_TekraredenSayilar {
 
         int [] arr ={2,3,5,6,3,5,4,1,9,6,3};
 
-        Arrays.sort(arr); // 1. once dogal siralama yapiyoruz.
+        Arrays.sort(arr); // 1. once  .sort() ile dogal siralama yapiyoruz.
         System.out.println(Arrays.toString(arr));// [1, 2, 3, 3, 3, 4, 5, 5, 6, 6, 9]
-        List <Integer> tekrarEdenler= new ArrayList<>();
+        List <Integer> tekrarEdenler= new ArrayList<>(); // list yapmamizin sebebi listin esnek olmasi
+        // ve istedigimiz kadar sayi ekliyor olbilmemiz icin.
 
         for (int i = 0; i < arr.length -1 ; i++) { // arr[i] == arr[i+1] tekrar ediyorsa yazdir yoksa yazdirma
-            if (arr[i]==arr[i+1] && !tekrarEdenler.contains(arr[i])){
+            if (arr[i]==arr[i+1] && !tekrarEdenler.contains(arr[i])){// [i] yanindakine esitse [i] ==[i+]
+                                                                   // ve tekrarEdenler icinde yoksa tekrarEdenler'e ekle
                 System.out.print(arr[i] +" "); // 3 3 5 6 // ayni sayidan ikiden daha fazla olursa birden
                                                 // fazla yazdirir.  boyle durumda tekrara girmek istemiyorsak
                                                 // forLoop tan once bir List<> olusturup satir 17

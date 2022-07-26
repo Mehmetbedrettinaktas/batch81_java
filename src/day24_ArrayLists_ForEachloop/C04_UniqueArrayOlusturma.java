@@ -18,7 +18,7 @@ public class C04_UniqueArrayOlusturma {
         int [] uniqueArray= uniqueArrayOlustur(arr);  // bir array dondurecek bize getirdigi array'i kaydecek bir
                                                     // veraiable olusturmak lazim (uniqueArray) gibi
 
-        System.out.println(Arrays.toString(uniqueArray)); // [1, 2, 3, 4, 5, 6]
+        System.out.println(Arrays.toString(uniqueArray)); // [1, 2, 3, 4, 5, 6, 9]
 
     }
 
@@ -40,7 +40,7 @@ public class C04_UniqueArrayOlusturma {
        }
 
 
-       // 1,2,3,4,5,6,9 benzersiz(tekrarsiz) liste
+       // 1,2,3,4,5,6,9 benzersiz(tekrarsiz) list
        // benzersiz listenin size() bilgisini kullanarak bir Array olusturduk
 
        int [] tekrarsizArr=new int[benzersizList.size()]; // icinde sadece default degerler var

@@ -9,7 +9,7 @@ public class C05_VarargsPrametreIleKullanma {
         /*
         Varargs teorik olarak sonsuz sayida element alabilir
         bir method'da parametre olarak varargs varsa
-        vavargs'in sinirlarini bilebilmesi icin parameterlerin
+        varargs'in sinirlarini bilebilmesi icin parameterlerin
         sonuncusu olmalidir.
         Oncesinde farkli parametreler olabilir ama varargs 'dan sonra parametre olamaz.
 

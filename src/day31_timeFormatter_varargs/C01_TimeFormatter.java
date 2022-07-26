@@ -11,9 +11,10 @@ public class C01_TimeFormatter {
         // Ilk olusturulan tarih : 2022-07-25T20:41:16.278730200
 
 
+        // M==> Months, m==> minutes
         DateTimeFormatter dtf1=DateTimeFormatter.ofPattern("dd//M/yy  hh:mm");
         System.out.println(dtf1.format(tarihSaat)); // 25//7/22  08:45
-        // d birtane yazarsak
+        // d  eger tek rakamdan olusan bir gundeyseniz 05 seklinde yaziyor.
 
         DateTimeFormatter dtf2=DateTimeFormatter.ofPattern("d//MMM/yyyy  hh:mm");
         System.out.println(dtf2.format(tarihSaat)); //25//Tem/2022  08:47

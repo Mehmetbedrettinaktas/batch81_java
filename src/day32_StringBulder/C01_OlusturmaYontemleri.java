@@ -1,0 +1,48 @@
+package day32_StringBulder;
+
+public class C01_OlusturmaYontemleri {
+    public static void main(String[] args) {
+
+
+        StringBuilder sb1= new StringBuilder();
+        StringBuilder sb2 = new StringBuilder("Java Candir...");
+        StringBuilder sb3= new StringBuilder(10);
+
+        System.out.println("sb1.length() = " + sb1.length()); // 0
+        System.out.println("sb1.capacity() = " + sb1.capacity()); // 16
+
+        System.out.println(" ");
+
+        System.out.println("sb2.length() = " + sb2.length()); // 14
+        System.out.println("sb2.capacity() = " + sb2.capacity()); // 30
+
+        System.out.println(" ");
+
+        System.out.println("sb3.length() = " + sb3.length()); // 0
+        System.out.println("sb3.capacity() = " + sb3.capacity()); // 10
+
+        /*
+        Eger bos bir obje olusturursak java lenght()'i 0
+        ve capacity'sini her halukarde 16 lik bir karekter uzunlugunu ayirir
+        eger bir sitring varsa karekter sayisi +16 kareter
+        icin de hafiza ayirmis olur.
+         */
+
+
+
+        sb1.append("Java");
+        System.out.println("sb1.length() = " + sb1.length()); // 4
+        System.out.println("sb1.capacity() = " + sb1.capacity()); // 16
+
+        sb1.append(" Candir");
+        System.out.println("sb1.length() = " + sb1.length()); // 11
+        System.out.println("sb1.capacity() = " + sb1.capacity()); // 16
+
+        sb1.append(", bilen bilir.");
+        System.out.println("sb1.length() = " + sb1.length()); // 25
+        System.out.println("sb1.capacity() = " + sb1.capacity()); // 34 (16 * 2 +2)
+
+
+
+    }
+}

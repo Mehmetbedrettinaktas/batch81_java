@@ -18,10 +18,11 @@ public class C03_VarargsIleToplama {
         toplaYazdir(sayi1,sayi2);
     }
 
-    public static void  toplaYazdir(int ... sayi){ // (int ... sayi    sayisi belli belli degil
+    public static void  toplaYazdir(int ... sayi){ // (int ... sayi  ===> sayi belli  degilse
+
         /*
         (int ... sayi bu gosterim integer variable'lardan olusan bir varargs demektir
-        varargs array alt yapisini kullanilir
+        varargs(degisken sayidaki argument) Array alt yapisini kullanilir
          */
 
         int toplam=0;

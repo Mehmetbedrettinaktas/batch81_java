@@ -15,7 +15,7 @@ public class C05_IstenmeyenleriSil {
 
         String []sehirler={"Istanbul","Ankara","Mersin","Konya","Kastamonu"};
 
-        String istenmeyenHarf="a";
+        String istenmeyenHarf="r";
         List<String> kalanlar=new ArrayList<>();
 
         for (int i = 0; i < sehirler.length ; i++) {
@@ -26,7 +26,7 @@ public class C05_IstenmeyenleriSil {
         }
         // loop bitiginde istenmeyen harf icermeyen sehirler, listeye eklenmis olacak
 
-        System.out.println("kalanlar = " + kalanlar); // [Mersin]
+        System.out.println("kalanlar = " + kalanlar); // [Istanbul, Konya, Kastamonu]
 
         // yeni bir array olusturup, listeyi ona aktaralim
         String []kalanlarArrayi= new  String[kalanlar.size()];
@@ -38,8 +38,8 @@ public class C05_IstenmeyenleriSil {
 
         // sehirler array'inin yeni degerini atayalim
         sehirler=kalanlarArrayi;
-        System.out.println("kalanlar = " + kalanlar); // [Mersin]
-        System.out.println("sehirler array'nin son hali : "+ Arrays.toString(sehirler));  // [Mersin]
+        System.out.println("kalanlar = " + kalanlar); // [Istanbul, Konya, Kastamonu]
+        System.out.println("sehirler array'nin son hali : "+ Arrays.toString(sehirler));  // [Istanbul, Konya, Kastamonu]
 
     }
 
