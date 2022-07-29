@@ -2,61 +2,21 @@ package day26_constructor;
 
 public class MyConstructor {
     // Bu class calistiginda output ne olur?
-    int x=5;
+    int x = 5;
 
-    public MyConstructor() {
-        System.out.println( "-x"+ x); // -x5
+    public MyConstructor() {                // constructor1  // 5.
+        System.out.println("-x" + x); // -x5                  // 6.
 
     }
 
-    public MyConstructor(int x) {
-        this();
+    public MyConstructor(int x) {        // constructor2          // 3.
+        this();                                                   // 4.
 
-        System.out.println("-x"+x);
+        System.out.println("-x" + x);
     }
 
-    public static void main(String[] args) {
-        MyConstructor mc1=new MyConstructor(4); // -x4
-        MyConstructor mc2= new MyConstructor(); // -x5
-    }
-
-    public static class C11_ConstructorCarrunner {
-        public static void main(String[] args) {
-
-
-            //   C10_ConstructorCar obje olusturulacak class'in adi
-            //car1 obje'nin adi
-            // new yeni bir obje olusturmak icin kullanilan keyword
-            //C10_ConstructorCar(); constructor 'dir
-
-            //new  C10_ConstructorCar(). tum ozelliklerini de bu sekilde kullanabiliriz
-
-            C10_ConstructorCar car1=new C10_ConstructorCar(2022, "Turuncu");
-
-
-
-
-
-
-        }
-    }
-
-    public static class C10_ConstructorCar {
-
-       public C10_ConstructorCar(){
-
-           System.out.println("parametresiz cons");
-       }
-
-       public  C10_ConstructorCar(String renk){
-           System.out.println(renk+" araba uretildi");
-       }
-       public  C10_ConstructorCar(int yil){
-           System.out.println(yil+" araba uretildi");
-       }
-       public  C10_ConstructorCar(int yil, String renk){
-           System.out.println(yil+ " model "+renk+ " renkte araba uretildi");
-
-       }
+    public static void main(String[] args) {                        // 1.
+        MyConstructor mc1 = new MyConstructor(4); // -x4            // 2. bizi constructor2 gon
+        MyConstructor mc2 = new MyConstructor(); // -x5
     }
 }

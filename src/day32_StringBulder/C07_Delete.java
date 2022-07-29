@@ -11,12 +11,15 @@ public class C07_Delete {
 
         // basta baslayarak her loop'da ilk harfi silip kalani yazdiralim
 
-        int son =sb.length();
-        for (int i = 0; i <son; i++) {
+        int son= sb.length();
+
+        for (int i = 0; i <son ; i++) {
             sb.deleteCharAt(0);
             System.out.println("sb = " + sb);
+            // methodlar bize StringBuilder donduruyorsa string degisir,
+            //String donduruyorsa sitring degismez.
 
-      }
+        }
 
     }
 }

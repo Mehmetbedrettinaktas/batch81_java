@@ -13,7 +13,7 @@ public class C01 {
     bu default constructor cllas'dan obje olusturuldugunda otomatik olarak calisir
 
     ornegin bu class'indan constructor gorunmemesine
-    ragemen C02 class'inda icinde oldgumuz C91 class'indan bir
+    ragemen C02 class'inda icinde oldgumuz C1 class'indan bir
     obje uretebildik
 
     ******onemli****

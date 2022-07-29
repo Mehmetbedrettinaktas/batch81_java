@@ -1,6 +1,6 @@
 package day14_MethodCreation;
 
-import day13_methodCretion.C04_MethodCreation;
+import day13_methodCreation.C04_MethodCreation;
 
 public class C02_MethodCreation {
     public static void main(String[] args) {

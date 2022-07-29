@@ -10,13 +10,17 @@ public class C02_Append {
 
         // appende istedigimiz Stringi'i en sona ekler
 
-       // sb.append(5);
+        System.out.println("sb.append(\"Java\",2,4) = " + sb.append("Java", 2, 4));
+        //Java daha ne yapsin?va
+
+
+        // sb.append(5);
        // System.out.println("sb = " + sb); // sb = Java daha ne yapsin?5
 //
        // sb.append(true);
        // System.out.println("sb = " + sb); //sb = Java daha ne yapsin?5true
 
-
+        // araya ekleme yapmak istedigimizde append degil insert kullanmaiyiz
         sb.insert(4, " her seyi dusunmus,");
         System.out.println("sb = " + sb); //sb = Java her seyi dusunmus, daha ne yapsin?
 

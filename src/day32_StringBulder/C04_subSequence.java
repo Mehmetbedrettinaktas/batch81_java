@@ -15,6 +15,9 @@ public class C04_subSequence {
         sb.subSequence(0,3);
         System.out.println("sb = " + sb); // Kayra
 
+        System.out.println("SubSequence = "
+                + sb.subSequence(0,3)); // SubSequence = kay
+
 
     }
 }

@@ -30,8 +30,8 @@ public class C01 {
 
 
         C01 obj1=new C01();// burada bir C01 de obj1 objesini olusturduk.
-        System.out.println("obje1'in rakam degeri : "+obj1.rakam); // 5
-        System.out.println("obje1'in sayi degeri : "+ sayi); // 10
+        System.out.println("obje1'in rakam degeri : "+obj1.rakam); // 5  obje1 sildigimizde java hata veriyor, cunku
+        System.out.println("obje1'in sayi degeri : "+ sayi); // 10      instance variable'lara sadece obje ile ulasabiliriz.
 
         obj1.rakam +=1; // instance oldugu icin obje ile deger atamamiz gerekiyor
         sayi +=1;       // obj1.sayi da diyebiliriz
@@ -41,7 +41,7 @@ public class C01 {
 
 
 
-
+        // yukarida obje1'in degerini 1 artirmistik bakalim deger kelici olmus mudur?
         C01 obj2=new C01();
         System.out.println("obje2'in rakam degeri : "+obj2.rakam); // 5
         System.out.println("obje2'in sayi degeri : "+ sayi); // 11

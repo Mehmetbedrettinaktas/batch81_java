@@ -28,6 +28,7 @@ public class C01_StaticBlock {
         System.out.println("sayi = " + sayi); // 4. sirada calisti    0
 
     }
+
     static {
         System.out.println("Main method altindaki statick block calisti ");  //2. calisti
     }

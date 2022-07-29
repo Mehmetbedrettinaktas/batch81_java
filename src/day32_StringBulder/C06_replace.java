@@ -10,7 +10,12 @@ public class C06_replace {
 
         System.out.println("sb.replace(4,5,\"---\") = " + sb.replace(4,5,"---")); //Calm---Up
 
-        // replace ile nereyi degistirmek istediggimiz yeri degistiriyor.
+        /* replace ile nereyi degistirmek istediggimiz yeri degistiriyor.
+        StringBuilder da istenen index'ler arasindaki bolumun yerine
+        verilen String'i ekler
+
+
+         */
 
         sb.replace(4,7," ");
         System.out.println("sb = " + sb); // Calm Up

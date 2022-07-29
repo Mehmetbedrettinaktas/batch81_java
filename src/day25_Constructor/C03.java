@@ -4,8 +4,8 @@ public class C03 {
 
     /*
     proje olusturulurken bazi class'lar run etmek icin degil
-    variable ve method olusturup
-    bunlari baska class'lardan kullanmak icin olusturulur
+    variable ve method olusturup bunlari
+    baska class'lardan kullanmak icin olusturulur
 
     bu class'lari kaliphane olarak kullanmak icin kullanilir
 
