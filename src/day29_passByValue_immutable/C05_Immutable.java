@@ -12,7 +12,7 @@ public class C05_Immutable {
         isim="Mevlut";
         System.out.println(" isimdeki degisiklik gormek icin = " + isim); // Mevlut
 
-        // Yeni deger atandigi icin eskileri artik hafizada sadece cop olarak durur.
+        // Yeni deger atandigi icin degisiklikleri artik hafizada sadece cop olarak durur.
 
         for (int i = 0; i <100 ; i++) {
             isim += ".";
@@ -20,7 +20,7 @@ public class C05_Immutable {
             // bunlar cope gitmek icin beklenir.
 
         }
-        System.out.println("isim = " + isim);
+        System.out.println("isim = " + isim); // Mevlut.....................
 
 
     }

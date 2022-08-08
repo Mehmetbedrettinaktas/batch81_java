@@ -19,11 +19,7 @@ public class C03_PassByValue {
         System.out.println("indirimliFiyat = " + indirimliFiyat); // 75.0
         System.out.println("satisFiyati = " + satisFiyati); // satisFiyati = 100.0
 
-        System.out.println("****");
 
-        double indirimliFiyat1 =indirimliFiyat1(satisFiyati, indirimOrani);
-        System.out.println("indirimliFiyat1 = " + indirimliFiyat1); // 75.0
-        System.out.println("satisFiyati = " + satisFiyati); // satisFiyati = 100.0
     }
 
    public static double indirimliFiyatHesapla(double satisFiyati, double indirimOrani) { // biz burada satisFiyati goruruz ama java value gecirir
@@ -32,10 +28,6 @@ public class C03_PassByValue {
 
         return indirimliFiyat;
 
-    }
-    public static double indirimliFiyat1(double satisFiyati, double indirimOrani){
-        double indirimliFiyat1=satisFiyati*(1-indirimOrani/100);
 
-        return indirimliFiyat1;
     }
 }

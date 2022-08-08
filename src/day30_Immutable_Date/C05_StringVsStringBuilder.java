@@ -7,7 +7,7 @@ public class C05_StringVsStringBuilder {
 
         /*
         String mi yoksa StringBuldider mi daha hizlidir?
-        bunun icin bir String olusturup, 1000 kere sonuna . ekleyelim
+        bunun icin bir String olusturup, 10000 kere sonuna . ekleyelim
         oncesinde ve sonrasinda zaman alip aradaki farki bulalim
 
         ayni islemi String bulder icin de yapalim
@@ -48,10 +48,6 @@ public class C05_StringVsStringBuilder {
         System.out.println("bitis = " + bitis);
 
         System.out.println("String Builder zaman : "+(bitis.getNano()-baslangic.getNano()));
-
-
-
-
 
 
 

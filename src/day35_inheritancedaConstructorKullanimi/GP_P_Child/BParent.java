@@ -7,6 +7,6 @@ public class BParent extends AGrandParent{
     protected  String parentKlupAdi="Parent klubu";
     public BParent() {
 
-        System.out.println("AParent constructor calisti");
+        System.out.println("Parent constructor calisti");
     }
 }

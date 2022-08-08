@@ -4,7 +4,7 @@ public class AGrandParent {
     protected String isim="Grandpa ismi belirtilmedi";
 
     /*
-    her class'ta grunmese bile bir constructor vardir
+    Her class'ta grunmese bile bir constructor vardir
     Bu class'ta obje olsturmak istedigimizde default constructor
     devreye girecektir.
 

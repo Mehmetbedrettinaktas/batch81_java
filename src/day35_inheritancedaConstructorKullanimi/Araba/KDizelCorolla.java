@@ -13,7 +13,7 @@ public class KDizelCorolla extends HCorolla {
     }
 
     public static void main(String[] args) {
-        KDizelCorolla obj1=        new KDizelCorolla("Ali");
+        KDizelCorolla obj1= new KDizelCorolla("Ali");
 
     }
 

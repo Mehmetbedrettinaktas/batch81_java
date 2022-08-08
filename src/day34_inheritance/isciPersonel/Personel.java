@@ -2,7 +2,7 @@ package day34_inheritance.isciPersonel;
 
 public class Personel {
     /*
-     Eger parent class olacak sekilde tasarladiginiz bir class varsa
+      Eger parent class olacak sekilde tasarladiginiz bir class varsa
       veya ilerde bu class'i parent yapmak isteyenler olabilir diyorsaniz
       variable ve method'larin a
       access modifier'ini protected

@@ -22,28 +22,33 @@ public class Child extends BParent {
         child1.grandpaKlupAdi="Child1";
         child1.parentKlupAdi="Child2";
 
+
+       // child1 objesi icin child constructor calisti
+
         /*
-        child1 objesi icin child constructor calisti
 
-        Java da bir class'i kullanabilmek icin
-        o class'dan obje olusturur, dolayisiyla o class'in
-        constructor'ini kullanirdik
+        Java'da bir class'i kullanabilmek icin
+          o class'dan obje olusturur, dolayisiyla
+          o class'in constructor'ini kullanirdik
 
+          Java inheritance'da parent class'lardaki
+          ozellikleri kullanabilmek icin
+          o class'larin constructor'larini
+          otomatik calistiran bir yapi kurmustur.
 
-        java inhertance 'da kullanabilmek icin o class'larin
-        constructor'larini otomatik calistiran bir yapi kurulmustur
+          Ornegin biz child class'inda
+          Child class'indan bir obje olusturmak istedigimizde
+          Child cons. ini kullaniriz
 
-        ornegin bir child class'inda
-        Child class'indan bir obje olusturmak istedigimizde
-        Child constructor'ini kullanabiliriz
-
-        Java Child(){} gordugunde once parent'in constructor'ini
-        calistirmam lazim der burada Parent constructor'a gider
-        Parent class'inda Parent(){} gorunce bunun parent'inin
-        yani Grandparent constructor calismasi gerekir der,
-        Boylece extends kyword olmayan class'a kadar gider ve
-        oradan baslayarak tum constructori asagi dogru calistirir
-
+          Java Child(){} gordugunde
+          once parent'in constuctor'ini calistirmam lazim der
+          buradan Parent cons'a gider
+          Parent class'inda Parent(){} gorunce
+          once bunun parent'inin yani Granparent cons.
+          calismasi gerekir der
+          Boylece extends keyword olmayan class'a kadar gider
+          ve oradan baslayarak tum constructorlari
+          asagi dogru calistirir
 
 
          */

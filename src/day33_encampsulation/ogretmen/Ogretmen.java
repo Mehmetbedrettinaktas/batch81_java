@@ -2,7 +2,7 @@ package day33_encampsulation.ogretmen;
 
 public class Ogretmen {
 
-   private String isim;
+    private String isim;
     private String soyisim;
     private String brans;
 
@@ -25,9 +25,9 @@ public class Ogretmen {
         this.isim = isim;
     }
 
-    public String getSoyisim() {
-        return soyisim;
-    }
+   public String getSoyisim() {
+       return soyisim;
+   }
 
     public void setSoyisim(String soyisim) {
         this.soyisim = soyisim;

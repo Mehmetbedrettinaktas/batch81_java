@@ -12,13 +12,25 @@ public class Tasit {
 
     public void setTasitTuru(String tasitTuru) { // Tir
         this.tasitTuru = tasitTuru;
-        //return olmadığı icin bu methodun cağırıldığı
-        // tasitrunner classinden yazdirilamaz
+       /*
+       getter method'u da tek bir satirlik islem yapiyor
+       baska class'larin private oldugu icin erisemedigi
+       tasitTuru bilgisini, class icinden alip
+       istenen farkli class'lar return ediyor.
 
-        //burada bir satırlık islem yapıyor o bir satırlık islemde
-        // bizim gönderdiğimiz parametreyi instence variable a atıyor.
+
+        return olmadığı icin bu methodun cağırıldığı
+         tasitrunner classinden yazdirilama
+        burada bir satırlık islem yapıyor o bir satırlık islemde
+         bizim gönderdiğimiz parametreyi instence variable a atıyor.
+
+        */
     }
 
+    /*
+    boolean variable'lar icin olusturulan getter ve setter
+    method'larin ismi   isvariableIsmi seklinde olur.
+     */
     public boolean isMuayenesiVarmi() {
         return muayenesiVarmi;
     }

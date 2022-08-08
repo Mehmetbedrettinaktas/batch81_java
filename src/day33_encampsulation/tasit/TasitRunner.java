@@ -14,6 +14,10 @@ public class TasitRunner {
         // aracı oluyor ve publıc aracı
         // kendı class ından bılgıyı bıze getırdı
 
+        // burada tasitTuru 'ne private oldugu icin ona ulasamiyoruz,
+        // ancak ayni class'taki public gettasitTuru() method'un araciligiyla
+        // tasitTuru variable na ulastim.
+
 
     }
 }

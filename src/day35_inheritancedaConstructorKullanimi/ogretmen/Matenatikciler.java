@@ -29,6 +29,7 @@ public class Matenatikciler extends LOgretmen{
     veraiable'lari refere ediyor
 
     inheritance'da super. vardir
+
      */
 
 }

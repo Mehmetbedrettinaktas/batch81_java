@@ -18,6 +18,9 @@ public class C01_ImmutableClass {
         list.remove(2); // list.remove("Ismail")
         System.out.println("list = " + list); // list = [Kenan, Yasemin]
 
+        list.remove("Kenan");
+        System.out.println("list = " + list);
+
 
     }
 }

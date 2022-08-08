@@ -14,6 +14,7 @@ public class C01_PassByvalue {
          */
 
         int []arr={5,7,8,10};
+
         elemanDegistir(arr);
         System.out.println("main methud'un icinde diger method calistiktan sonra: "+Arrays.toString(arr));
         // [5, 78, 8, 29]
@@ -29,7 +30,7 @@ public class C01_PassByvalue {
         System.out.println("Methodun icinde : "+Arrays.toString(arr)); // Methodun icinde : [5, 93, 8, 22]
 
             /*
-            Bii objenin kendisini degistirmezsek sadece elemanlarini degistirisek
+            Bir objenin kendisini degistirmezsek sadece elemanlarini degistirisek
              java bakiyor referans degismedigi icin
             arayya'i degistirmiyor.
 

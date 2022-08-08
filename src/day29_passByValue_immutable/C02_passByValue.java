@@ -12,7 +12,8 @@ public class C02_passByValue
         yapilarda da passByvalue gecerlidir.
 
         Eger method'da array veya listin kendisi degistirilirse
-        passByvalue ozelligi sebebiyle Java degisen degeri degil array veya listin' orjinal degerini alir
+        passByvalue ozelligi sebebiyle Java degisen degeri degil
+        array veya listin' orjinal degerini alir
 
         Ancak array veya list degistirilimeden
         sadece icindeki elemanlar degistirilirse Java
@@ -36,7 +37,7 @@ public class C02_passByValue
 
         System.out.println("method call'dan sonra main method'da array : "+ Arrays.toString(arr));
         // [3, 5, 8, 10]
-        System.out.println("main method'da arr = " + arr);  // main method'da arr = [I@13fee20c
+        System.out.println("main method'da arr'nin referansNo = " + arr);  // main method'da arr = [I@13fee20c
 
 
     }
@@ -52,6 +53,6 @@ public class C02_passByValue
         System.out.println("method'da array : "+ Arrays.toString(arr));
         // method'da array : [27, 50, 16]
 
-        System.out.println("Method 'da arr = " + arr); // Method 'da arr = [I@64616ca2
+        System.out.println("Method 'da arr' referansNo= " + arr); // Method 'da arr = [I@64616ca2
     }
 }

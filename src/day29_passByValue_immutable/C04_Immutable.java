@@ -23,9 +23,11 @@ public class C04_Immutable {
 
         System.out.println("str = " + str); // str = Yildiz Bank
 
+        str=str.substring(3,5);
+        System.out.println("str = " + str); // str = di testirildi cunku atama yapmis olduk
 
         // Java da String gibi metin ifadelerde kullanabilecegimiz
-        // mutable StringBuilder class class'i da vardir.
+        // mutable StringBuilder class'i da vardir.
 
         StringBuilder sb= new StringBuilder("Java Bank");
         System.out.println("sb = " + sb); // sb = Java Bank
