@@ -1,0 +1,45 @@
+
+# non-primitive data turundeki datalari her zaman direk yazdiramayabiliriz
+  Array'i yazdirmak istersek javadaki Arrays class'(Arrays.toString())indan yardim isteriz
+#  // iki sekilde Array olusturulabiliyor
+          int sayilar[]={1,2,3}; // 1. sekilde
+          String harfler []=new String[4]; // 2. sekilde
+#  String lenght() method'unda parentez=>() var, array'da () YOK.
+
+# // harfler array'nin son elementini yazdiralim
+System.out.println(harfler[harfler.length-1]); // null
+
+#  // uzunlugundan daha fazla uzun bir index  sayi yazarsak
+   System.out.println(harfler[5]); // ArrayIndexOutOfBoundsException   hatasini verir.
+
+#   int sayilar[] = {1, 2, 3, 4, 5, 6, 7};
+          int toplam = 0;
+          // Array'in tamamini yazdirmak istersek
+          System.out.println(Arrays.toString(sayilar)); // [1, 2, 3, 4, 5, 6, 7]
+          // Array'in tum elementlerini yazdiralim dersek fori loop kullaniyoruz
+
+          for (int i = 0; i < sayilar.length; i++) {
+              //System.out.print(sayilar[i]+" "); // 1 2 3 4 5 6 7
+
+# Array'in uzunlugunu degistiremiyoruz eger array'e eleman eklemek istiyorsak;
+1- Array'in uzunlugunu degistiremedigimiz icin yeni bir array olusturuyoruz
+2- eski listeden 1 eleman fazla uzunlukta yeni bir array olustururuz
+3- Eski Arraydeki elemanlarinida yeni Array'e tasiyoruz fori ile
+4- oncelikle eski listedeki tum elemanlari, yeni listeye tasiriz
+5- son index'e ise eklenecek eleman atanir
+
+# sort() method ;
+int [] sayilar={5,7,1,5,7,4,9};
+        String [] harfler={"R","D","C","T"};
+        // Array'i Arrays class'inin sort() method'u kullanarak natural sirali hale getirebiliriz
+
+#  Binary search java da eleman aramanin kisa yoludur;
+     - Ancak binary search'un calismasi icin once  array'in sirali hale getirilmesi gerekir yani sort() method'u kullaniyoruz
+     - Eger siralama yapmadan binarySearch yaparsaniz sonucu bulamayabilir veya yanlis bulabilir
+     - binarySearch bize aradigimiz elemanin index'ini dondurur
+
+# BinarySearch method'u siralanmis array'de aradigimiz elementin index'ini dondurur
+  Ya aradigimiz element array'de yoksa? (String'de indexOf() bize olmayan elemntler icin -1 donduruyordu)
+  Aradigimiz element array'de yoksa Java hem olmadigini,  hem de olsaydi nerede olacagini bize dondurur.
+  olmadigini ifade icin -(eksi) kullanilir olmasaydi nerede olacagini belirtmek icin index degil siralama kullanilir
+  var olanlarda index, olmayanlara siraya bakiyoruz.

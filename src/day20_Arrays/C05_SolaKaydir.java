@@ -18,7 +18,7 @@ public class C05_SolaKaydir {
 
         for (int i = 0; i < arr.length-1 ; i++) {
 
-            arr[i]=arr[i+1];  // burada 2'i 1'e , 3'u 2'e , 4'u 3'3 seklinde devam edecek
+            arr[i]=arr[i+1];  // burada 2'i 1'e , 3'u 2'e , 4'u 3'e seklinde devam edecek
             // length()-1 vermemizin sebebi hata veriyor.
 
         }

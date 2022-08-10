@@ -7,7 +7,7 @@ public class C03_Classvariables {
 
  /*
          Farkli bir class'da calisirken
-         her hangi bir class adini yazip 'ya basarsak
+         her hangi bir class adini yazip .'ya basarsak
          adini yazdigimiz class'daki tum STATIC class uyelerini gorebilir
          ve kullanabiliriz
          */

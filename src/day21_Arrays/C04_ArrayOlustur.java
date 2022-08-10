@@ -22,7 +22,7 @@ public class C04_ArrayOlustur {
     public static int[] arrayOlustur() {
 
         Scanner scan = new Scanner(System.in);
-        System.out.println("Kac elemanli bir array olusturmami istersiniz: ");
+        System.out.print("Kac elemanli bir array olusturmami istersiniz: ");
         int uzunluk=scan.nextInt();
         int[] olusturulan= new int[uzunluk];
 

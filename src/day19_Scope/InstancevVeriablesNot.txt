@@ -1,0 +1,37 @@
+
+       # class icerisinde heryerden kullanmak istediginiz variable'lari
+        class level'da (Class'in icinde ama method'larin disinda)
+        genellikle class level variable'lar class'in basinda olusturulur(sart degil)
+
+        class level'daki variable'lar icin 2 scope vardir
+        1- static variables (Class variable'lari da denir)
+        2- instance (static olmayan) variables (obje variable'i da denir)
+
+       # instance variables static olmadigi icin static klup'e uye main method'dan direk kullanamayiz
+        instance variable'larin diger adi object variable'dir
+        dolayisiyla obje olusturursaniz instance variable'lari heryerden kullanabilirsiniz
+
+        #  Her obje olustugunda instance (obje) variable'inin ilk atanan degerini alir
+        # bir method'un icerisinde olusturulan variable,  sadece o method'un icinden kullanilabilir (Local variables)
+        # instance variable'lara main method disindaki static method'lardan da direk ulasamayiz obje olusturursak ulasabiliriz
+        # instance variable'lar class icerisindeki static olmayan method'lardan direk kullanilabilir
+        #  Class level'daki variable'lara deger atamasak da Java kabul ediyor
+        #  bir variable static olusturulduysa objeler icin degil class icin gecerlidir
+        # instance bir variable'in degerini bulmak icin objenin olusturulmasindan itibaren istenen satira kadar kodu takip etmeliyiz
+        # Static variable'da ise class'in en basindan baslayarak istenen satira kadar kodu tekip edip
+        static variable'in son degerini bulmamiz gerekir
+        # static variable'lar class icerisinden her yerden ulasilabilir  static olsun veya olmasin tum method'lar
+        static variable'lari gorebilir ve degistirebilirler farkli method'larda static variable'in
+        hangi degeri alacagini bilmek istiyorsak class'in basindan itibaren kodun calismasini takip etmeliyiz
+         method ne zaman cagrilirsa o anki static variable degerini method'da kullanabiliriz
+         # Farkli bir class'da calisirken her hangi bir class adini yazip .'ya basarsak
+        adini yazdigimiz class'daki tum STATIC class uyelerini gorebilir ve kullanabiliriz
+        # Class level variable'lara deger atayip atamamak bize kalmistir istersek deger atamasi yapariz, istemezsek deger atamayiz
+        # Eger Deger atamissak Java atadigimiz o degeri kabul eder deger atamazsak Java bu variable'lara default bir deger atamasi yapar
+                   int --> 0
+                   String --> null
+                   boolean--> false
+                   char --> '' (hiclik)
+
+        # static keyword sadece class level'da kullanilabilir
+        #  method'larin icerisinde static variable TANIMLANAMAZ
