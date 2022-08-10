@@ -5,8 +5,9 @@ public interface I01_InterfaceBodyOlanMethod {
     void  motor();
     public void yakit();
     public abstract String aku();
+
     //public abstract String aku(){ Interface abstract methods cannot have body
-    //                              interface abstract methods larda body kullanilamaz
+    //                              interface abstract methods'larda body kullanilamaz
     //}
 
     /*
@@ -47,8 +48,7 @@ public interface I01_InterfaceBodyOlanMethod {
         System.out.println("default ...tum arabalarin tekeri vardir");
     }
 
-    public static void direksiyon(){
-        System.out.println("Static ...Tum arabalarin direksiyonu vardir");
-    }
+    public static void direksiyon(){ System.out.println("Static ...Tum arabalarin direksiyonu vardir");}
+
 
 }

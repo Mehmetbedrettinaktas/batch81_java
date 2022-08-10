@@ -8,6 +8,7 @@ public interface I03_Interfaces {
         bunun icin variable olusturdugumuzda mutlaka deger atamaliyiz
         Bir interface bir class'i parent edinemez
       */
+    void  yakit();
     /*
        Interface icerisindeki her method
        public ve abstract  ozelliklerine sahiptir
@@ -24,6 +25,11 @@ public interface I03_Interfaces {
        bu method'lara concrete denmez
        body'si olan bu method'lar istisna olarak kabul edilebilir.
      */
+    public  void  motor();
+    public  abstract void  teker();
+    static public  void aku(){
+
+    }
 
 
 }
