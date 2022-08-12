@@ -25,7 +25,7 @@ public class C01_MultiDimensionalArrays {
         /*
         burada sayilar arrayini dusunursek icinde 2 tane inner array
         var sayilar[0]==> [1, 2, 4, 5]
-
+        sayilar[1]==> [3, 4]
         ancak en icerdeki elementlere ulasabilmek direk yazdirabiliriz
 
 

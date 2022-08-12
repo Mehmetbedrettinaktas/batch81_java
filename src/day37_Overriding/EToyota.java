@@ -9,6 +9,7 @@ public class EToyota extends DAraba {
         calismasini istersek ilk satira super.marka() yazabiliriz.
 
          */
+        System.out.println("Markamiz Toyota");
     }
 
     void motor(){

@@ -34,7 +34,7 @@ public class C05_SolaKaydir {
             arr[i]=arr[i-1];
         }
 
-        System.out.println(Arrays.toString(arr)); //[2, 2, 3, 4, 5]
+        System.out.println(Arrays.toString(arr)); //[1, 2, 3, 4, 5]
 
         arr[0]=temp;
         System.out.println(Arrays.toString(arr)); // [1, 2, 3, 4, 5]

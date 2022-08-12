@@ -1,6 +1,6 @@
 package repeat.day37_Overriding;
 
-public class C02_overridding {
+public class  C02_overridding {
     public static void main(String[] args) {
 
 

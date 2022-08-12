@@ -10,7 +10,7 @@ public class C01_Exceptions {
           ama sorunu her zaman if else ile cozemeyecegimizden
           Java try-catch block'lari olusturmustur.
          */
-        int a = 1000;
+        int a = 100;
         int b = 50;
         int sayac = 1;
 

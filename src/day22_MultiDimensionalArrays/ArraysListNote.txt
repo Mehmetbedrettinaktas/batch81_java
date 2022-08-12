@@ -1,0 +1,20 @@
+
+# tek katli Arraylerde array'i direk yazdiramiyoruz cunku array non-primitive data turundur ve
+her non-primitive data direk yazdirilmalidir
+# ancak array'in icerisindeki elementleri direk yazdirabiliyorduk cunku genelde primitive
+data turu veya String elementler kullaniliyordur.
+# Multi-dimensional array'lerde en dikkat edecegimiz konu ulasamak istedigimiz
+elementin bir array mi yoksa primitive data mi oldugudur
+
+# MULTIDIMENSIONAL ARRAYIN ELEMANLARINI YAZDIR
+ // verilen bir multi-dimentional arra'in  tum elementlerini yazdiran bir method olusturun
+        int [][] sayilar ={{1,5,6,9},{2,5},{3,1,6}};
+        elementleriYazdir(sayilar);
+    }
+    public static void elementleriYazdir(int[][] sayilar) {
+
+        for (int i = 0; i <sayilar.length ; i++) { //outer array uzunluguna bakar i= 0,1,2 degerlerini alacak
+
+            for (int j = 0; j <sayilar[i].length ; j++) { // inner array'in uzunluguna bagladik
+
+                System.out.print( sayilar[i][j]+ " "); // 1 5 6 9 2 5 3 1 6

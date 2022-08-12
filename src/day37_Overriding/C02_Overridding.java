@@ -1,6 +1,6 @@
 package day37_Overriding;
 
-public class C02_Overridding {
+public class C02_Overridding{
 
     public static void main(String[] args) {
 

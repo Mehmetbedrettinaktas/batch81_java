@@ -1,0 +1,64 @@
+Method	Açıklama/Örnek Kullanım
+ceil	Tek parametre alır(double) ve bir büyük tam sayıya yuvarlama yapar.
+Math.ceil(2.6) => 3.0
+cos	Tek parametre alır(double) ve cos değerini döner.
+Math.cos(30)
+sin	Tek parametre alır(double) ve sin değerini döner.
+Math.sin(30)
+floor	Tek parametre alır(double) ve bir küçük tam sayıya yuvarlar.
+Math.floor(2.6) => 2.0
+max	İki parametre alır ve parametrelerden büyük olan sayıyı geri döner.
+Math.max(2.5,9) =>9
+min	İki parametre alır ve parametrelerden küçük olan sayıyı geri döner.
+Math.min(2.5,9) => 2.5
+pow	İki parametre alır ve ikinci parametreyi birincinin üstü olarak kullanır.
+Math.pow(3,5) => 3^5 anlamına gelir => 243.0
+random	Parametre almaz ve 0 ile 1 arasında double bir değer döner
+Math.random()
+Math.round : double veri tipine sahip değerleri en yakın sayıya yuvarlar. (Math.round(11.6) : 12 çıktısını verir.)
+Math.round(2.4) => 2
+Math.round(2.6) => 3
+
+1)2 değer arasındaki maks değeri bulmak için kullanılır.
+double max=Math.max(2.3, 4.5);
+System.out.println(max); "4.5"
+
+2)2 değer arasındaki min değeri bulmak için kullanılır
+double min=Math.min(2.3, 4.5);
+System.out.println(min); "2,3"
+
+3)Üslü sayı
+double pow=Math.pow(3,5); burada 3 ün 5 kuvveti olmus oluyor.
+System.out.println(pow); "243"
+
+4)Mutlak Değer
+double abs=Math.abs(-4); mutlat deger sayi dogrusu üzerindeki uzaklik oldugu icin her zaman pozitif olur.
+System.out.println(abs); "4"
+
+5)Girilen sayının karakökünü alma.
+double square=Math.sqrt(4);
+System.out.println(square); "2"
+
+6)En yakın ve büyük tam sayıya yuvarlama.
+double ceil=Math.ceil(1,2);
+System.out.println(1,2); "2"
+
+7)Virgülden önceki tam sayıya yuvarlama.
+double floor=Math.floor(1,9);
+System.out.println(1.9); "1"
+
+8)En yakın tam sayıya yuvarlama.
+float round=Math.round(5,6);
+System.out.println(5,6); "6"
+
+9)Açı değeri bulma;
+double aci = Math.toRadians(45);
+System.out.println("45 in tan degeri : " + Math.tan(aci)); "0.99"
+
+10)Logaritma;
+double logaritma10 = Math.log10(1000);
+System.out.println("Logaritma 1000 : " + logaritma10);     "3"
+
+11)2 tabanında logaritma;
+double logaritma = Math.log(16) / Math.log(2);
+System.out.println("Logaritma 2 tabanında 16 : " + logaritma);      "4"

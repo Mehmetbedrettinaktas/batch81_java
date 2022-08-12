@@ -14,7 +14,7 @@ public class C02_Excetions {
         catch blogu  : Java'ya soyledigimiz exception(isnisnai durum) gerceklesirse
                    Java'nin yapmasini istedigimiz islem
 
-              catch blogununonundeki parentez karsilasmayi bekledigimiz
+              catch blogunun onundeki parentez karsilasmayi bekledigimiz
               excetion'i yazabilir veya her turlu exception'da devreye girmesini istiyorsak
               tum exception'larin parenti'i olan Exception yazabiliriz.
 

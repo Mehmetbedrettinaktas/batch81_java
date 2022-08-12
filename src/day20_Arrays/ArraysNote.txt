@@ -4,6 +4,8 @@
 #  // iki sekilde Array olusturulabiliyor
           int sayilar[]={1,2,3}; // 1. sekilde
           String harfler []=new String[4]; // 2. sekilde
+
+
 #  String lenght() method'unda parentez=>() var, array'da () YOK.
 
 # // harfler array'nin son elementini yazdiralim
@@ -20,7 +22,7 @@ System.out.println(harfler[harfler.length-1]); // null
 
           for (int i = 0; i < sayilar.length; i++) {
               //System.out.print(sayilar[i]+" "); // 1 2 3 4 5 6 7
-
+# ARRAY ELEMAN EKLEME
 # Array'in uzunlugunu degistiremiyoruz eger array'e eleman eklemek istiyorsak;
 1- Array'in uzunlugunu degistiremedigimiz icin yeni bir array olusturuyoruz
 2- eski listeden 1 eleman fazla uzunlukta yeni bir array olustururuz
@@ -43,3 +45,40 @@ int [] sayilar={5,7,1,5,7,4,9};
   Aradigimiz element array'de yoksa Java hem olmadigini,  hem de olsaydi nerede olacagini bize dondurur.
   olmadigini ifade icin -(eksi) kullanilir olmasaydi nerede olacagini belirtmek icin index degil siralama kullanilir
   var olanlarda index, olmayanlara siraya bakiyoruz.
+
+  #METHODLA ARRAY OLUSTURMA :
+  int [] sayilar= arrayOlustur();
+          System.out.println(Arrays.toString(sayilar));
+      }
+      public static int[] arrayOlustur() {
+
+          Scanner scan = new Scanner(System.in);
+          System.out.print("Kac elemanli bir array olusturmami istersiniz: ");
+          int uzunluk=scan.nextInt();
+          int[] olusturulan= new int[uzunluk];
+
+          for (int i = 0; i <uzunluk ; i++) {
+              System.out.print(i+ ". index icin sayi giriniz: ");
+              olusturulan[i]=scan.nextInt();
+
+          }
+          return  olusturulan;
+
+  # ARRAY 'IN TÜM ELEMANLARINI YAZDIRMA
+  int sayilar[] = {1, 2, 3, 4, 5, 6, 7};
+          int toplam = 0;
+
+          // Array'in tamamini yazdirmak istersek
+          System.out.println(Arrays.toString(sayilar)); // [1, 2, 3, 4, 5, 6, 7]
+          // Array'in tum elementlerini yazdiralim dersek fori loop kullaniyoruz
+          for (int i = 0; i < sayilar.length; i++) {
+              //System.out.print(sayilar[i]+" "); // 1 2 3 4 5 6 7
+
+              if (i != sayilar.length - 1) {
+                  System.out.print(sayilar[i] + ", ");
+              } else {
+                  System.out.println(sayilar[i]); // 1, 2, 3, 4, 5, 6, 7
+              }
+              toplam += sayilar[i];
+          }
+          System.out.println("toplam = " + toplam);

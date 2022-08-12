@@ -13,7 +13,7 @@ public class C02_MdatumElementleriYazdirma {
 
     public static void elementleriYazdir(int[][] sayilar) {
 
-        for (int i = 0; i <sayilar.length ; i++) { // i= 0,1,2 degerlerini alacak
+        for (int i = 0; i <sayilar.length ; i++) { //outer array uzunluguna bakar i= 0,1,2 degerlerini alacak
 
             for (int j = 0; j <sayilar[i].length ; j++) { // inner array'in uzunluguna bagladik
 
