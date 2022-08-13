@@ -16,6 +16,6 @@ public class C02_MapsMethodIle {
         List<String> sinifisimsoyisimList = day46_maps.ReusableMethods.isimSoyisimListesiOlustur(ogrenciMap);
         System.out.println("isim soyisim listesi : " + sinifisimsoyisimList);
 
-        // kac farkli brans varsa bransIsmi = branstakiOgrencisayisi seklinde yazdirin
+
     }
 }

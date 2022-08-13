@@ -1,5 +1,8 @@
 package day41_AbstractcCass;
 
+import java.util.ArrayList;
+import java.util.List;
+
 public class HA160 extends FMercedes{
 
     /*
@@ -27,10 +30,11 @@ public class HA160 extends FMercedes{
          Toyota class''i abstract class oldugundan obje uretilemez
 
 
-
+        sol taraf data türü  sag tarf concrete oluyor
         List<String> list1 = new List<String>();
+       */
         List<String> list2 = new ArrayList<>(); // data turu list oldugu icin aramaya listen baslayacak
-
+        /*
         Abstract bir class'in ozelliklerini tasiyan bir oobje
         olusturmak istedigimizde data turunu istedigimiz class
         constructor'i ise child'i olan concrete bir class'dan seceriz.
