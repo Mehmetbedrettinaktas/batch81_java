@@ -20,6 +20,7 @@ public interface I02_Interfaces {
        Hatirladiginiz gibi Interface olan List'den direk obje olusturamiyorduk
        List<String> liste = new List<>();  calismaz
        Bunun yerine constructor'i List'in child'i olan ArrayList'den seceriz
+
        List<String> liste = new ArrayList<>();
 
     3- Class'larda bir child birden fazla parent edinemez
