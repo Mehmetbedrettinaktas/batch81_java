@@ -28,7 +28,8 @@ public class C02_ListIterator {
             li1.next();
         }
         // bu loop bizi sona goturur
-
+            // previous sondan basa dogru gidiyor
+             // hasnext() methodu bastan sona dogru gidiyor
         while (li1.hasPrevious()){ // hasPrevious() yanda eleman var diye sorar varsa devam eder
             System.out.print( li1.previous()+" "); //40 14 45 23 56 13 2 previous() ise yana kay demek
         }

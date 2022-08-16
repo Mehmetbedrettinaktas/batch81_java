@@ -34,9 +34,10 @@ public class M03_Iterator {
         3- hasNext() methodu yanda bir sey var mi? sonuc boolean
          */
 
-        System.out.println("liste = " + liste);
-
+        System.out.println("liste = " + liste); // liste = [10, 20, 30]
+            // [10, 20, 30] Iterator uzerine atladigi sayiyi bize yazdiriyor.
         Iterator itr1= liste.iterator(); // iterator --> yenileyici
+
         System.out.println("itr1.next() = " + itr1.next());// itr1.next() = 10
         System.out.println("itr1.next() = " + itr1.next()); // 20
         System.out.println("itr1.next() = " + itr1.next()); // 30
@@ -64,7 +65,7 @@ public class M03_Iterator {
         liste.add(10);
         liste.add(20);
         liste.add(30);
-        System.out.println("yeniden liste : "+liste);
+        System.out.println("yeniden liste : "+liste); // yeniden liste : [10, 20, 30]
         Iterator itr3= liste.iterator();
         while (itr3.hasNext()){
             itr3.next();

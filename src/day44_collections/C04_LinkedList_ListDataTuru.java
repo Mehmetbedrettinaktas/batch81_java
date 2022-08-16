@@ -24,7 +24,7 @@ public class C04_LinkedList_ListDataTuru {
 
         System.out.println("ll2 = " + ll2); //ll2 = [Berk, Done, Enes, Ayse]
 
-        System.out.println("ll2.remove(3) = " + ll2.remove(3));
+        System.out.println("ll2.remove(3) = " + ll2.remove(3)); // Ayse kaldirdi
         // ll2.remove(3) = Ayse sildigi elementi bana getiriyordu.
 
         System.out.println("ll2.remove(3) = " + ll2.remove("Kemal"));

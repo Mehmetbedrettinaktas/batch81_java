@@ -16,10 +16,14 @@ public class C06_LinkendList_DequeDataTuru {
 
 
         ll4.removeLastOccurrence("Selim");
+        ll4.removeLastOccurrence("Hasan");
+
         System.out.println("ll4 = " + ll4); //ll4 = [Cavidan, Mesut, Selim, Teyfik]
         ll4.remove();
         ll4.removeFirst();
+        System.out.println("ll4 = " + ll4);
         ll4.removeLast();
+        System.out.println("ll4 = " + ll4); // ll4 = [Selim]
         // Deque iki tarafli queue demektir, dolayisiyla her method'un first ve last'i var
         System.out.println(ll4); // [Selim]
 
