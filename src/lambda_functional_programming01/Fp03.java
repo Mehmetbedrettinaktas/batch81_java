@@ -68,6 +68,7 @@ public class Fp03 {
                 forEach(Utils::ayniSatirdaBosluklaYazdir);
         // Christopher Benjamin Jackson Mariano Alberto Amanda Tucker Mark Ali Ali
         // Comparator karsilastirma yapilir
+        // reversed() methodu tersten siralama yapar
     }
     //4) Elemanları son karakterlerine göre sıralayıp tekrarsız yazdıran bir method oluşturun.
     public static void sonKarektereGoreTekrarsizYazdir(List<String> list){
@@ -90,7 +91,7 @@ public class Fp03 {
         //  public static void bestenBuyukleriSil(List<String> list){
         //      list.removeIf(t->t.length()>5); //removeIf(t->t.length()>5);//elemanin uzunlugu 5'ten buyukse sil
         //      System.out.println("list = " + list); //list = [Ali, Ali, Mark]
-    // liste, muteble oldugu icin elemanlari islem sonrasi kalici olarak silindigi icin coment line ile
+      // liste, muteble oldugu icin elemanlari islem sonrasi kalici olarak silindigi icin coment-out yapiyorum
         //  }
 
     //7) ‘A’, ‘a’ ile başlayan yada ‘N’, ‘n’ ile biten elemanları silen bir method oluşturun.
@@ -113,7 +114,7 @@ public class Fp03 {
     //}
     //9) Tüm elemanların uzunluklarının 12'den az olup olmadığını kontrol eden bir method oluşturun.
     public static boolean uzunlugu12denAzMi(List<String> list){
-        return list.stream().allMatch(t-> t.length()<12);
+        return list.stream().allMatch(t-> t.length()<12); // allMatch===> hepsine tek tek bak demek sonuc boolean donduruyor.
     }
     //10) Hiçbir elemanın 'X' ile başlamadığını kontrol eden bir method oluşturun.
     public static boolean xIleBaslamiyorMu(List<String> list){

@@ -12,8 +12,8 @@ public class Fp02 {
         2)  Functional Programming kapsamida "Lambda Expession" kullanilabilir ama onerilmez.
             "Lambda Expession" yerine "Method Referece " tercih edilir.
         3)  "Method Referece " kullanimi "Class Name :: Method Name"
-              Ayni zamanda kendi Class'larinizi da kullanabilirsiniz.
-              Ornegin bir Animal class'iniz var ve bu class "eat()"
+
+        Ayni zamanda kendi Class'larinizi da kullanabilirsiniz. Ornegin bir Animal class'iniz var ve bu class "eat()"
               methoduna sahip ==> "Animal :: eat"
 
          */
@@ -109,22 +109,24 @@ public class Fp02 {
     //Ödev
     //8)List elemanları arasından en küçük değeri bulan bir method oluşturun.(Method Reference)
     public static void getMinmumEleman(List<Integer> list) {
-
+        Integer min= list.stream().distinct().reduce(Math::min).get();
+        System.out.println("min = " + min);
     }
     //9) List elemanları arasından 7'den büyük, çift, en küçük değeri bulan bir method oluşturun.
     public static void yedidenBuyukCiftMin(List<Integer> list) {
         Integer min=list.stream().distinct().filter(t->t>7).filter(Utils::ciftElemanlariSec).reduce(Math::min).get();
+        System.out.println("min = " + min);
 
     }
     //10) Ters sıralama ile tekrarsız ve 5'ten büyük elemanların
     // yarı değerlerini(elamanın ikiye bölüm sonucunu) bulan bir method oluşturun.
     public static void tersSiralamaylaTerarsizElemabnlarinYarisi(List<Integer> list){
       List<Double> sonuc=  list.
-              stream(). // Gerekli methodlari kullanmamizi saglar
-              distinct(). // Tekrarli olanlari almaz
-              filter(t->t>5).// Kosula gore filtreleme yapar
+              stream().              // Gerekli methodlari kullanmamizi saglar. Ve akisi saglar
+              distinct().           // Tekrarli olanlari almaz
+              filter(t->t>5).     // Kosula gore filtreleme yapar
               map(Utils::yarisiniAl). // //Her bir elemanın değerini değiştirmeye yarar
-              sorted(Comparator.reverseOrder()). //Sıralama yapar
+              sorted(Comparator.reverseOrder()). //Sıralama yapar ama tersten siralar
               collect(Collectors.toList()); //Elamanları collection'a çevirir.
         System.out.println("sonuc = " + sonuc); //sonuc = [65.5, 5.0, 4.5, 4.0]
     }
