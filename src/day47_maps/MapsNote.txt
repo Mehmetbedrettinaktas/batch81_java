@@ -1,0 +1,24 @@
+
+-  Map: gercek projelerdeki database sistemine en uygun java objesidir.
+-  Map'lerde ayni ozelliklere sahip ve ozellikleri ayni bicimde tektiplestirilmis datalar saklayabilir.
+-  Tektiplestirme sonradan datalara ulasabilmek icin onemli
+-  Map'e ekleyecegimiz tum ozellikler 2 parcadan ( key/ value) olusmasidir. Key ve value icin
+    data turu sinirlamasi yoktur, istedigimiz data turu sinirlamasi yoktur, istedigimiz data
+    turunu secebiliriz.
+-  Map olustururken key ve value'nun data turune karar vermis olmamiz ve bunu deklare etmemeiz gerekir.
+-  Map'de tum islemler key uzerinden yapilabilir, bundan dolayi key degerleri unique olmalidir.
+-  Bir firmada calistigimizda eger map kullaniliyorsa, map'in data yapisi hep ayni olacaktir.
+    bizden istenen herhangi bir gorevi yaparken, girevi bagimsiz method'larla kurgulamak, ilerde
+    yapacagimiz gorevlerde kolaylik saglayacaktir.
+
+-  Map'lerde key ve value'lara map.keySet() ve map.values ile ulasabiliriz, ancak key ve value'ya birlikte
+ulasmak istersek 2 ihtimalimiz var.
+        - keySet() ile key'ler alip bir Set'e koyabilir, set'deki herbir key uzerinden map.getKey(key) ile
+        value'lar ile ayri ayri ugrasmamiz icin Entry interface'ini olusturulmustur. Entery hem key hem de value
+        icerdigi icin map'in elemanlari uzerinde gezinmek ve uptade etmek daha kolay olacaktir.
+-  Uptade: ister keySet() isterseniz Entery ile yapilan, yaptigimiz her degisikligin kalici olmasi icin
+en son Map'i update etmeliyiz. Bunun icin degisiklik yaptigimiz value'yu
+ put(key, yenivalue) olarak map'e ekleyebilir veya entry.setValue(yenideger) ile entry uzerinden map'i
+ update edebiliriz.
+ -   map'de containsKey() ve containsValue() methodlari ile key veya value'nun map'de olup olmadığı kontrol edebiliriz.
+ Burada dikkat etmemiz gereken sey, valu'yu bir butun olarak arayabiliriz, value icerisindeki bir String'i aratamayiz.

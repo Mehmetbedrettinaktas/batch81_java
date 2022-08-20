@@ -37,30 +37,32 @@ public class ReusableMethods {
 
     public static void bransOgrencisayisiYazdir(Map<Integer, String> sinifListMap) {
         // brans=bransdakiOgrenciSayisi
-        Map<String, Integer> bransOgrSayiMap = new TreeMap<>();
-        Collection<String> valuesCollection = sinifListMap.values();
-        String[] valueArr;
+        Map<String, Integer> bransOgrSayiMap = new TreeMap<>();// TreeMap yapmamizin sebebi az elemanli olmasi ve TreeMap'ler elemanlari natural order'a gore siralar.
+        // Siralama icin key'i dikkate alir.
+        Collection<String> valuesCollection = sinifListMap.values(); // Collection olusturuyoruz ve degerlerini sinifListMap ten  values aliyoruz.
+        String[] valueArr;  // Sitring array olusturuyoruz
         String brans;
         Integer bransdakiOgrSayisi;
         for (String each : valuesCollection
         ) {
-            valueArr = each.split(", ");
-            brans = valueArr[2];
+            valueArr = each.split(", "); // value leri parcaliyoruz
+            brans = valueArr[2];  // ValueArr array mizin 2. indexi bras oldugu icin onu baransa aiyoruz
+
             // bransin bransOgrSayiMap'inde key olarak daha onceden eklenip eklenmedigini
             // kontrol etmeliyiz
-            if (!bransOgrSayiMap.containsKey(brans)) {
-                bransOgrSayiMap.put(brans, 1);
-            } else {
+            if (!bransOgrSayiMap.containsKey(brans)) { // bu mep benim bransim mi iceriyor mu? ama biz icermiyormu istiyoruz icermiyorsa ekliyoruz.
+                bransOgrSayiMap.put(brans, 1); //  Yoksa ekle diyoruz burada butun branslari buluyoruz, (Devops, JDev"); ve Tester) burada branslar key oluyor elste valulari artiracagiz
+            } else { // varsa value 1 artiracagiz
                 bransdakiOgrSayisi = bransOgrSayiMap.get(brans);
                 bransOgrSayiMap.put(brans, ++bransdakiOgrSayisi);
             }
-        }
+        }  // bu islemleri foreach loop icerisinde yaptigimiz icin
         System.out.println(bransOgrSayiMap);
     }
 
-    public static void entryYazdir(Map<Integer, String> sinifListMap) {
-        Set<Map.Entry<Integer,String>> sinifListEntrySeti= sinifListMap.entrySet();
-        for (Map.Entry<Integer,String> entry: sinifListEntrySeti
+    public static void entryYazdir(Map<Integer, String> sinifListMap) { // Entry leri yazdirmak icin once entry set olusturmamiz lazim
+        Set<Map.Entry<Integer, String>> sinifListEntrySeti = sinifListMap.entrySet();
+        for (Map.Entry<Integer, String> entry : sinifListEntrySeti
         ) {
             System.out.println(entry);
         }

@@ -12,7 +12,7 @@ public class C05_EntryUpdate {
          */
         Map<Integer, String> sinifListMap = ReusableMethods.mapOlustur();
         // entryleir alalim
-        Set<Map.Entry<Integer, String>> entrySeti=sinifListMap.entrySet();
+        Set<Map.Entry<Integer, String>> entrySeti=sinifListMap.entrySet(); // burada butun Entry'lere sahibiz
         String entryValue;
         String[] entryArr;
         for (Map.Entry<Integer, String> entry:entrySeti

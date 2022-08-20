@@ -15,12 +15,12 @@ public class C01_NestedMaps {
     Ancak, bilgiye ulasmak ve manipule etmek zorlasacaktir.
 
     ornek olarak map'imizi map'lerden olusan bir map olarak olusturalim
-         sinifMap.put(102, "Enes, Cem, Tester");
+       sinifMap.put(102, "Enes, Cem, Tester");
         sinifMap.put(103, "Taha, Emre, JDev");
         sinifMap.put(104, "Derya, Deniz, Devops");
      */
     public static void main(String[] args) {
-        Map<String, String> ogr101=new HashMap<>();
+        Map<String, String> ogr101=new HashMap<>();  // burada ogrenci maplerini ayri ayri olusturduk.
         ogr101.put("isim","Enes");
         ogr101.put("soyisim","Cem");
         ogr101.put("brans","Tester");
@@ -35,7 +35,7 @@ public class C01_NestedMaps {
         ogr103.put("soyisim","Deniz");
         ogr103.put("brans","Devops");
 
-        Map<Integer,Map<String, String>> ogrencinestedMap=new HashMap<>();
+        Map<Integer,Map<String, String>> ogrencinestedMap=new HashMap<>(); // NestedMaps
         ogrencinestedMap.put(101,ogr101);
         ogrencinestedMap.put(102,ogr102);
         ogrencinestedMap.put(103,ogr103);

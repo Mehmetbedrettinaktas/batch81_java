@@ -9,13 +9,17 @@ public class C02_MapMethodlari {
 
         Map<Integer,String> sinifListMap=ReusableMethods.mapOlustur();
         ReusableMethods.entryYazdir(sinifListMap);
+
         sinifListMap.clear();
-        System.out.println("cleardan sonra map : " + sinifListMap);
+        System.out.println("cleardan sonra map : " + sinifListMap); // cleardan sonra map'imiz temiz lendigi icin diger methodlar icin tekrar olusturuyoruz.
+        System.out.println(" ");
         sinifListMap=ReusableMethods.mapOlustur();
-        System.out.println(sinifListMap.getOrDefault(104, "Aradiginiz key yok"));
+        System.out.println(sinifListMap.getOrDefault(104, "Aradiginiz key yok"));  // getOrDefault Default olarak tanimladigimz bir string getiriyor
         // Derya, Deniz, Devops
         System.out.println(sinifListMap.getOrDefault(110, "Aradiginiz key yok"));
         // Aradiginiz key yok
+        System.out.println(" ");
+
         System.out.println(sinifListMap.isEmpty()); // false
         sinifListMap.putIfAbsent(104,"Derya, Okyanus, Developer");
         sinifListMap.putIfAbsent(108,"Aysun, Can, Devops");
@@ -24,10 +28,13 @@ public class C02_MapMethodlari {
           SinifListesiMap'e key olarak 106 yoksa , value "Mevlut, Han, Tester" ekleyin
           106 daha onceden varsa, "eski degeri degistirmek istediginizden emin misiniz ?"
           yazdirin
-          106'nin oldugunu kontrol etmek icin containsKey dha mantikli ama biz
+
+          106'nin oldugunu kontrol etmek icin containsKey daha mantikli ama biz
           yeni ogrendigimiz method ile yapalim
+
           map.putIfabsent (key, value) ==> key varsa
           ekleme yapmaz, bize o key ile kayitli olan value'yu dondurur
+
           ==> key daha onceden map'e eklenmemisse
           eklemeyi yapar ve bize null dondurur
          */
@@ -44,8 +51,8 @@ public class C02_MapMethodlari {
         sinifListMap.remove(106); // 106'yi silip bana sildigini dondurur
         sinifListMap.remove(107,"Derya, Cem, Tester"); // silerse true, silmezse false dondurur
         ReusableMethods.entryYazdir(sinifListMap);
-        sinifListMap.replace(105,"Erdal, Ciftci, Tester");
-        sinifListMap.put(109,"Cavidan, Eken, JDev"); // ikisi ayni islevi yapiyor
+        sinifListMap.replace(105,"Erdal, Ciftci, Tester"); // 105=Erdal, Ciftci, Tester
+        sinifListMap.put(109,"Cavidan, Eken, JDev"); // 109=Cavidan, Eken, JDev         ikisi ayni islevi yapiyor
         ReusableMethods.entryYazdir(sinifListMap);
         System.out.println(sinifListMap.size()); // 7
     }

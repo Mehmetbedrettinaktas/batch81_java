@@ -19,7 +19,7 @@ public class C03_Compute {
         harfMap.compute("D", (a, b) -> b * b);
         System.out.println("harfMap = " + harfMap); //harfMap = {A=13, B=1, C=2, D=16, E=4}
 
-        harfMap.computeIfAbsent("C", (v) -> 30);
+        harfMap.computeIfAbsent("C", (v) -> 30); //computeIfAbsent istenen key degeri map'de yoksa o key' ve value'yu ekler
         System.out.println("harfMap = " + harfMap); // harfMap = {A=13, B=1, C=2, D=16, E=4}
 
         harfMap.computeIfAbsent("F", (v) -> 30);
@@ -28,7 +28,7 @@ public class C03_Compute {
        harfMap.computeIfPresent("E",(k,v)->v+5);
         System.out.println("harfMap = " + harfMap); // harfMap = {A=13, B=1, C=2, D=16, E=9, F=30}
 
-        harfMap.computeIfPresent("B",(k,v)->v+5);
+        harfMap.computeIfPresent("G",(k,v)->v+5);
         System.out.println("harfMap = " + harfMap);
 
 

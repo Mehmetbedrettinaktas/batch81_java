@@ -1,4 +1,4 @@
-package day46_maps;
+package day46_mapsNote;
 
 import java.util.HashMap;
 
